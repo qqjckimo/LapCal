@@ -8,7 +8,7 @@ module.exports = {
     },
     output: {
         path: path.join(__dirname, "static/js"),
-        publicPath: "/static/js/",
+        publicPath: "static/js/",
         filename: "[name].js"
     },
     plugins: [
