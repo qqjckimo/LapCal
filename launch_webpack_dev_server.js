@@ -10,12 +10,13 @@ config.entry.app.unshift("webpack-dev-server/client?http://localhost:" + port + 
 
 new WebpackDevServer(webpack(config), {
     hot: true,
-    publicPath: config.output.publicPath,
+    publicPath: '/' + config.output.publicPath,
     historyApiFallback: true
 }).listen(port, 'localhost', function(err, result) {
     if (err) {
         return console.log(err);
     }
-
+    console.log(config.plugins[0].constructor.name);
+    console.log(config.devtool);
     console.log('Listening at http://localhost:' + port + '/');
 });

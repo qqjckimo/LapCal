@@ -102,8 +102,8 @@ define([
             render: function() {
                 
                 // style variable
-                var numbtn_cls = "btn";
-                var smallbtn_cls = "btn ";
+                var numbtn_cls = "btn btn-default";
+                var smallbtn_cls = "btn btn-default";
                 var fullWidth = {width: '100%'};
                 var btn_stytle = {height: '100%', width: '100%'};
                 var fullDim = {height: '100%', width: '100%'};
@@ -147,7 +147,7 @@ define([
 
                 return (
                     <div className="row">
-                        <div className="col-xs-4">
+                        <div className="col-xs-6">
                             <h5>輸入跑者號碼</h5>
                             <form className="form-group" onSubmit={this.onSetPress}>
                                 <input className="form-control" type='tel' ref="numInput" onChange={this.onNumChange}/>

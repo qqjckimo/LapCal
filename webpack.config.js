@@ -7,9 +7,9 @@ module.exports = {
         'app': [path.resolve(__dirname, "static_dev/js/main_module.jsx")]
     },
     output: {
-        path: path.join(__dirname, "static/js"),
-        publicPath: "static/js/",
-        filename: "[name].js"
+        path: path.join(__dirname, "static"),
+        publicPath: "static/",
+        filename: "app.js"
     },
     plugins: [
         new webpack.DefinePlugin({
